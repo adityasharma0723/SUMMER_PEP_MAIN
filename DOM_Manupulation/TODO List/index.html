@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>ToDo App</h2>
+
+        <div class="form-group">
+            <input type="text" placeholder="Name" id="nameInput">
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="Age" id="ageInput" min="1">
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Gmail" id="gmailInput">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Reg. No." id="regInput">
+        </div>
+        <div class="form-group">
+            <select id="roleInput">
+                <option value="">Select Role</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Scholar">Scholar</option>
+            </select>
+        </div>
+
+        <div class="task-row">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

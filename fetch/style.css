@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+	color: #111;
+	background: #fff;
+}
+
+.page {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 24px;
+}
+
+.hero { margin-bottom: 16px; }
+
+.eyebrow {
+	margin: 0 0 8px;
+	font-size: 0.9rem;
+	font-weight: 700;
+	color: #555;
+}
+
+h1 { margin: 0; font-size: 1.6rem; line-height: 1.2; }
+
+.subtitle { margin-top: 8px; color: #666; max-width: 640px; }
+
+.panel {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 16px;
+}
+
+.panel-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 12px;
+	flex-wrap: wrap;
+}
+
+button {
+	border: 1px solid #bbb;
+	background: #f0f0f0;
+	padding: 8px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.status { margin-bottom: 12px; color: #666; }
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 12px;
+}
+
+.card {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 12px;
+}
+
+.card h3 { margin: 0 0 8px; font-size: 1rem; }
+
+.meta { margin: 6px 0; color: #555; font-size: 0.95rem; }
+
+.badge { display: inline-block; padding: 4px 8px; background: #f0f0f0; border-radius: 4px; font-weight:700; }
+
+@media (max-width: 600px) {
+	.page { padding: 16px; }
+	.panel-header { flex-direction: column; align-items: flex-start; }
+}

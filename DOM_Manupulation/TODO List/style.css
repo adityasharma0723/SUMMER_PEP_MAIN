@@ -1,0 +1,144 @@
+/* TODO List — Redesigned Style */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ── Body ── */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef2ff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 16px;
+}
+
+/* ── Container Card ── */
+.container {
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 30px rgba(67, 97, 238, 0.12);
+}
+
+/* ── Title ── */
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: #4361ee;
+    border-radius: 4px;
+    margin: 8px auto 0;
+}
+
+/* ── Form Groups ── */
+.form-group {
+    margin-bottom: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #e0e4ef;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a2e;
+    background: #f8f9ff;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+input::placeholder {
+    color: #a0a8c0;
+}
+
+input:focus, select:focus {
+    border-color: #4361ee;
+    background: #fff;
+}
+
+/* ── Add Button Row ── */
+.task-row {
+    margin-top: 16px;
+}
+
+/* ── Buttons ── */
+button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    background: #4361ee;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #3451d1;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* ── List ── */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ── List Items ── */
+li {
+    background: #f4f6ff;
+    border: 1px solid #e0e4ef;
+    padding: 12px 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.88rem;
+    color: #1a1a2e;
+    transition: border-color 0.2s;
+}
+
+li:hover {
+    border-color: #4361ee;
+}
+
+/* ── Delete Button inside li ── */
+li button {
+    width: auto;
+    background: #ff4d6d;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+li button:hover {
+    background: #e63956;
+}
